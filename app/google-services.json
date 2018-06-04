@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1040014129473",
+    "firebase_url": "https://bwnotificationv1.firebaseio.com",
+    "project_id": "bwnotificationv1",
+    "storage_bucket": "bwnotificationv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040014129473:android:0f00c61ce4a1fdbd",
+        "android_client_info": {
+          "package_name": "com.bevywise.apiexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040014129473-0nltg14mm9q5ichcb0flfp1me1nefen2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1040014129473-0nltg14mm9q5ichcb0flfp1me1nefen2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4skHnbbpjmMWLF00EYxzJnTRwA0kXdsU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

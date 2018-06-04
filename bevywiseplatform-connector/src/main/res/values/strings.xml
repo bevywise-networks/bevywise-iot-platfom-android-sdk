@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bevywise Platform Connector</string>
+    <string name="api_version_one">/bwiot/api/v1</string>
+    <string name="api_signup">/auth/signup/</string>
+    <string name="api_login">/auth/login/</string>
+    <string name="api_logout">/auth/logout/</string>
+    <string name="api_generate_key">/devicesecurity/generatekey/</string>
+    <string name="api_device_list">/devices/</string>
+    <string name="api_get_device_rcvd_events">/devices/get_device_recv_detail/</string>
+    <string name="api_get_device_rcvd_cmds">/devices/get_device_sent_detail/</string>
+    <string name="api_get_client_topic_list">/ic/get_clients_related_to_the_topic/</string>
+    <string name="api_get_active_topic_subscription">/ic/get_active_topics_for_this_device/</string>
+    <string name="api_get_active_subscription">/ic/get_active_topics/</string>
+    <string name="api_get_dashboard_details">/dashboard/</string>
+    <string name="api_get_device_details">/devices/get_device_detail/</string>
+    <string name="api_send_command_topic">/ic/send_command_to_topic/</string>
+    <string name="api_send_command_device">/ic/send_command_to_device/</string>
+    <string name="api_device_edit_name">/devices/edit_device_name/</string>
+
+    <string name="api_version_result_status">bwapi-status</string>
+    <string name="api_version_result_status_value">success</string>
+    <string name="resultStatusReason">bwapi-status-reason</string>
+    <string name="resultToken">token</string>
+
+    <string name="invalidJson">Invalid JSON response</string>
+    <string name="api_set_token">/auth/pushfcm</string>
+</resources>
