@@ -14,11 +14,7 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import okhttp3.*;
 
 /**
  * Created by prince on 31/01/18.
@@ -130,7 +126,7 @@ public class NetworkConnection {
                         errorCode = NetworkErrorCode.JSON_ERROR;
                     }
                 } else if (response.code() == 401) {
-                    errorMessage = "Invalid input";
+                    errorMessage = "Invalid input or token expired";
                     errorCode = NetworkErrorCode.AUTHENTICATION_ERROR;
                 } else {
                     errorMessage = "Received wrong status fix the server api";

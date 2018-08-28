@@ -13,6 +13,7 @@ import com.bevywise.bevywiseplatform_connector.listeners.EventsListListener;
 import com.bevywise.bevywiseplatform_connector.listeners.LoginListener;
 import com.bevywise.bevywiseplatform_connector.listeners.PlatformResponseListener;
 import com.bevywise.bevywiseplatform_connector.listeners.SignupListener;
+import com.bevywise.bevywiseplatform_connector.listeners.TokenRefreshListener;
 import com.bevywise.bevywiseplatform_connector.listeners.TopicsListListener;
 import com.bevywise.bevywiseplatform_connector.utilities.NetworkConnection;
 import com.bevywise.bevywiseplatform_connector.utilities.NetworkErrorCode;
@@ -26,7 +27,7 @@ import java.net.URL;
 public class BevywisePlatformConnector {
     private static BevywisePlatformConnector instance;
     private PlatformConfiguration configuration;
-    private final Context context;
+    private Context context;
 
     private BevywisePlatformConnector(PlatformConfiguration configuration, Context context) {
         this.configuration = configuration;
@@ -98,7 +99,7 @@ public class BevywisePlatformConnector {
      */
 
     public void refreshToken(final TokenRefreshListener listener, String refreshToken) throws MalformedURLException, PasswordNotFoundException {
-        URL url = new URL(configuration.getUrl()+context.getString(R.string.api_version_one)+context.getString(R.string.api_login));
+        URL url = new URL(configuration.getUrl()+context.getString(R.string.api_version_one)+context.getString(R.string.api_refresh));
         if (configuration.getUsername() != null && configuration.getPassword() != null) {
             NetworkConnection networkConnection = new NetworkConnection.Builder(url, new NetworkConnection.Listener() {
                 @Override

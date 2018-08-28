@@ -7,7 +7,6 @@ import com.bevywise.bevywiseplatform_connector.BevywisePlatformConnector
 import com.bevywise.bevywiseplatform_connector.DevicePermissions
 import com.bevywise.bevywiseplatform_connector.PlatformConfiguration
 import com.bevywise.bevywiseplatform_connector.listeners.*
-import com.google.firebase.iid.FirebaseInstanceId
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -24,11 +23,6 @@ class MainActivity : AppCompatActivity() {
                 "pwd123",
                 "Xq5Pff7FqHTLPNkkoEKQuCH8VjnPOe6dtGCUY64O",
                 "WWqBIPN2ohhng7Srnpsvs1qIpioEgcL0P4m0qGDBPhyktw8Of1YZUQ1Yi8JGQPaqVHnpCie9pdBEEhLopBbtOzJcTv7flJWR4bfVFSMzLPYZUQgte9q0vGM9vhtFbLf8"),this)
-
-        var pushToken = FirebaseInstanceId.getInstance().getToken()
-        if (pushToken != null) {
-            notificationTest(pushToken, "i7X8e2d6B85SDEECWTo9i6a119qwyL");
-        }
 
 //        loginTest()
 //        logoutTest("9PNfkCkyTM6RadzULm4pFZmNp3aTwV");

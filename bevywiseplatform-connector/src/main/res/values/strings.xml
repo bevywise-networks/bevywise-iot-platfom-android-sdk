@@ -24,4 +24,5 @@
 
     <string name="invalidJson">Invalid JSON response</string>
     <string name="api_set_token">/auth/pushfcm</string>
+    <string name="api_refresh">/auth/refresh/</string>
 </resources>
